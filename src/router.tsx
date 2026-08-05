@@ -7,6 +7,9 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
+    // Supports serving the site from a sub-path (e.g. GitHub Pages: /Portfolio/).
+    // Vite injects BASE_URL ("/" for normal builds).
+    basepath: import.meta.env.BASE_URL,
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
