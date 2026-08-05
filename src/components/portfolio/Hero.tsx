@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ArrowDown, Download, FolderGit2, Mail, MapPin } from "lucide-react";
 import { profile, stats } from "@/lib/portfolio-data";
 import { Counter, Magnetic } from "./primitives";
-const RESUME_URL = "/saikumar_resume.pdf";
+const RESUME_URL = `${import.meta.env.BASE_URL}saikumar_resume.pdf`;
 
 /** Typewriter cycling through the role list. */
 function useTypewriter(words: string[]) {

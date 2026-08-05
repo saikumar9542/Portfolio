@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUp, FileText, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "@/lib/portfolio-data";
-const RESUME_URL = "/saikumar_resume.pdf";
+const RESUME_URL = `${import.meta.env.BASE_URL}saikumar_resume.pdf`;
 
 export function Footer() {
   const [show, setShow] = useState(false);
